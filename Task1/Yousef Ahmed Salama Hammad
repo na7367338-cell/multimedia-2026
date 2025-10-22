@@ -1,0 +1,34 @@
+#TASK 4
+def remove_from_list():
+    #تعريف للداله اللي جواها الليست
+    my_list = ['Apple', 'Banana', 'Cherry', 'Data']
+    print("the list:", my_list)
+    #هيطبع الليست الاصليه
+    item = input("enter the element you want to delet")
+    #طلب ادخال العنصر اللي هيتحذف
+    if item in my_list:
+        my_list.remove(item)
+        print("deleted successfuly")
+        #هيتاكد لو موجود وهيحذفه
+    else:
+        print("The item was not found")
+    print("the list after delet the element", my_list)
+    #لو العنصر المدخل مش موجود هيطبع الليست بدون مايحذف 
+remove_from_list() 
+#دا استدعاء للداله
+
+#TASK 5
+def calculate_factorial():
+    #تعريف الداله
+    n = int(input("enter a positive integer"))
+    #طلب ادخال رقم صحيح موجب وخزنته في المتغير 
+    result = 1
+    #بدابه الضرب
+    for i in range(1, n + 1):
+        #المتغير بيلف هنا من 1 لحد القيمه المدخله
+        result *= i
+        #بتضرب النتيجه فالعدد الحالي
+    print(f"{n}! = {result}")
+    #بتطبع الناتج النهائي
+calculate_factorial()
+#استدعاء الداله
