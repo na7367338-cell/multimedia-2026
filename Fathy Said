@@ -1,0 +1,10 @@
+def remove_from_list():
+    My_list = ['Apple', 'Banana', 'Cherry', 'Data']
+    input_User = input("Enter the item they want to remove: ")
+    if input_User in My_list:
+        My_list.remove(input_User)
+    else:
+        print("the item was not found")
+    print(My_list)
+
+remove_from_list()
