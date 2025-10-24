@@ -1,0 +1,25 @@
+# task 4
+def remove_from_list():
+    my_list = ["Apple", "Banana", "Cherry", "Data"]
+    print("the main list", my_list)
+    item = input("the iteam you want to remove : ")
+    if item in my_list:
+        my_list.remove(item)
+        print("itis done ")
+    else:
+        print("not in the list")
+
+    print("the list now is :", my_list)
+remove_from_list()
+#######################################################################################################
+# task 5
+def calculate_factorial():
+    n = int(input("what the number ? : "))
+
+    result = 1
+
+    for i in range(1, n + 1):
+        result = result * i 
+    print("what you ask for :", result)
+
+calculate_factorial()
