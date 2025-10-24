@@ -1,0 +1,43 @@
+task(4):-
+def remove_from_list():
+     تعريف قائمة فيها 4 عناصر نصية #
+    my_list = ['Apple', 'Banana', 'Cherry', 'Data']
+    
+     طباعة القائمة الأصلية#
+    print("Original list:", my_list)
+    
+    طلب إدخال عنصر من المستخدم لإزالته #
+    item = input("Enter the item you want to remove: ")
+    
+    التحقق هل العنصر موجود في القائمة أم لا #
+    if item in my_list:
+       # إزالة العنصر من القائمة 
+  my_list.remove(item) 
+        print(f"{item} has been removed successfully.")
+    else:
+        print(f"{item} was not found in the list.")
+    
+   طباعة القائمة بعد التحديث #
+    print("Updated list:", my_list)
+
+ استدعاء الدالة للتنفيذ #
+remove_from_list()
+__________________________________________________________________________
+task(5):-
+def calculate_factorial():
+     طلب إدخال عدد صحيح موجب من المستخدم #
+    n = int(input("Enter a positive integer: "))
+
+     تهيئة متغير باسم result بقيمة 1 (لأن 1! = 1) #
+    result = 1
+
+     استخدام حلقة for من 1 إلى n (شامل) #
+    for i in range(1, n + 1):
+ ضرب الناتج الحالي في الرقم الحالي # 
+        result = result * i  
+
+     طباعة الناتج النهائي #
+    print(f"The factorial of {n} is: {result}")
+
+ استدعاء الدالة للتنفيذ #
+calculate_factorial()
