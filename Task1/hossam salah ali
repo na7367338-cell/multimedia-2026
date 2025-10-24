@@ -1,0 +1,36 @@
+def remove_from_list():
+    List = ['Apple','Banana','Cherry','Data']
+    print("Original list:", List)
+    #print the original list
+
+    item = input("Enter the item you want to remove: ")
+    #for the item that the user want to delete
+
+    if item in List:
+        #if else statement to check if the item in the list
+        List.remove(item)
+        #remove the item from the list
+        print( str(item)+" has been removed ")
+    else:
+        print( str(item)+" not in the list ")
+
+    print("New list:", List)
+    #print the new list after the update
+
+remove_from_list()
+#using the function
+
+
+def calculate_factorial():
+    n=int(input("Enter a positive integer: "))
+    #the user number input
+    result=1
+    #the var result used for if the input = 0
+
+    for i in range(1,n+1):
+        #for loop to start multiply the numbers from 1 to n
+        result*=i
+        #multiply the number by the result
+    print("the factorial of "+str(n)+ " is "+str(result))
+calculate_factorial()
+#using the function
